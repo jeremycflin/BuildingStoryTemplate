@@ -350,6 +350,8 @@ table tr {
 </head>
 
 <body>
+    <div id="skrollr-body">
+    
     
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -389,8 +391,12 @@ table tr {
 <!--    chapter 1-->
     <div id="header" class="container-fluid">
 
+        <div data-center-top="transform:translate3d(0px,0px,0px);"
+             data-top-bottom="transform:translate3d(0px,-800px,0px);"
+             >
         <h1 class="text-center">Hello, world!</h1>
         <h2 class="text-center">Here's a description of our project</h2>
+        </div>    
 
     </div>
 
@@ -780,7 +786,7 @@ d3.tsv("data2.tsv", type, function(error, data) {
         </div>
     </div>
          
-         
+       </div>  
 
          
          
@@ -796,17 +802,10 @@ d3.tsv("data2.tsv", type, function(error, data) {
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
          
-    <script type="text/javascript" src="skrollr.min.js"></script>
-    <script type="text/javascript">
-    var s = skrollr.init();
-    </script>
-</body>
-
-        
-        
-        
-       
-        
-        
-        
+    <script src="js/skrollr.min.js"></script>
+         <script>
+            var s = skrollr.init();
+         </script>
+         
+</body>    
 </html>
